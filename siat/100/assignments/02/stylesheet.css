@@ -1,0 +1,114 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* General classes */
+.panelCenter {
+	padding: 0px;
+	width: 900px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+/* Multiple pages classes */
+.p1titleBlank, .p2footerBlank, .p3footerBlank, .p4headerBlank, .p4frame2Blank {
+	margin: 0px;
+	padding: 0px;
+	height: 62px;
+}
+.p1footerBlank, .p5footerBlank {
+	margin: 0px;
+	padding: 0px;
+	height: 203px;
+}
+.p2headerBlank, .p5headerBlank {
+	margin: 0px;
+	padding: 0px;
+	height: 168px;
+}
+.p2frame1Blank, .p5frame1Blank {
+	margin: 0px;
+	padding: 0px;
+	height: 373px;
+}
+
+
+/* Page 1 specific classes */
+.p1headerBlank {
+	margin: 0px;
+	padding: 0px;
+	height: 124px;
+}
+
+.p1frame3Blank {
+	margin: 0px;
+	padding: 0px;
+	height: 142px;
+}
+
+
+/* Page 2 specific classes */
+.p2frame2Blank {
+	margin: 0px;
+	padding: 0px;
+	height: 13px;
+}
+.p2frame4Blank {
+	margin: 0px;
+	padding: 0px;
+	height: 600px;
+}
+
+
+/* Page 3 specific classes */
+.p3headerBlank, .p3frame1Blank {
+	margin: 0px;
+	padding: 0px;
+	height: 100px;
+}
+.p3frame2Blank {
+	margin: 0px;
+	padding: 0px;
+	height: 10px;
+}
+
+
+/* Page 4 specific classes */
+.p4footerBlank {
+	margin: 0px;
+	padding: 0px;
+	height: 282px;
+}
+
+
+/* Page 5 specific classes */
+.p5frame2Blank {
+	margin: 0px;
+	padding: 0px;
+	height: 144px;
+}
+.p5frame4Blank, .p5frame5Blank {
+	margin: 0px;
+	padding: 0px;
+	height: 36px;
+}
+.p5textstyle {
+	font-family: "Century Gothic";
+	font-size: 36px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	text-transform: capitalize;
+	color: #4B4B4B;
+	width: 909px;
+	margin-right: auto;
+	margin-bottom: auto;
+	height: 36px;
+	padding-top: 62px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	letter-spacing: 5pt;
+	word-spacing: normal;
+	text-align: right;
+}
