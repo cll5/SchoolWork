@@ -1,0 +1,5 @@
+Calgary Canada 51.1 -114.0167
+Vancouver Canada 49.1833 -123.167
+Winnipeg Canada 49.9 -97.2333
+Ottawa Canada 45.3167 -75.6667
+Moose_Jaw Canada 50.3333 -105.55

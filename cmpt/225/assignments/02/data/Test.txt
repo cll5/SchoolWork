@@ -1,0 +1,6 @@
+Vancouver Canada 55.5 -55.5
+Bradford UK 55.5 -33.3
+DolAmroth Gondor 22.2 3.3
+Paris France 3.2 2.3
+Edoras Rohan 43.5 5.3
+Dresden Germany 23.3 3.2
