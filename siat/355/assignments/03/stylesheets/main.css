@@ -1,0 +1,44 @@
+html, input {
+	font-family: "Helvetica", "Arial", "sans-serif";
+	font-size: 14px;
+	color: #5D5E5E;
+}
+
+body {
+	background-color: #FDF8D7;
+}
+
+.flexbox-container {
+	display: -moz-box;
+    display: -ms-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.shadow {
+	margin-bottom: 1em;
+    -moz-box-shadow:    0 2px 5px 0 #5D5E5E;
+    -webkit-box-shadow: 0 2px 5px 0 #5D5E5E;
+    box-shadow:         0 2px 5px 0 #5D5E5E;
+}
+
+#visualizations {
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+#author {
+	margin: 2em 0 1em 0;
+	color: #000000;
+}
+
+.visualization-container {
+	background: #FFFFFF;
+	border-radius: 5px 5px 0 0;
+	border: 1px solid #5D5E5E;
+}
+
+.hide-this-element {
+	display: none;
+}

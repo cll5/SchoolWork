@@ -1,0 +1,14 @@
+sourceKey,sourceName,sourceType,unit
+coal,Coal,non-renewable,TJ
+naturalGas,Natural Gas,non-renewable,TJ
+petroleum,Petroleum,non-renewable,TJ
+nuclear,Nuclear,non-renewable,TJ
+biogas,Biogas,renewable,TJ
+biofuel,Biofuel,renewable,TJ
+biomass,Biomass,renewable,TJ
+waste,Waste,renewable,TJ
+geothermal,Geothermal,renewable,TJ
+hydro,Hydro,renewable,TJ
+marine,Marine,renewable,TJ
+wind,Wind,renewable,TJ
+solar,Solar,renewable,TJ

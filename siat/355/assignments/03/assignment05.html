@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>IAT334 - Assignment 05</title>
+		<link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+		<link rel="stylesheet" type="text/css" href="stylesheets/controllers.css">
+		<link rel="stylesheet" type="text/css" href="stylesheets/node-link-graph.css">
+		<script type="text/javascript" src="scripts/d3.min.js" charset="utf-8"></script>
+		<script type="text/javascript" src="scripts/underscore-min.js" charset="utf-8"></script>
+		
+	</head>
+
+	<body>
+		<div id="author">Created by: Chuck Lee (301054031)</div>
+		<div id="visualization-controls" class="shadow">
+			<form>
+				<div>
+					<label>Select a phone identifier:</label>
+					<input id="controls-select-id" type="text" name="controls-selected-id" value="200">
+				</div>
+				<div>
+					<span>
+						Remove callers that have less than
+						<input id="controls-calls-threshold" type="text" name="controls-calls-threshold" value="0">
+						calls
+					</span>
+				</div>
+			</form>
+		</div>
+		<div id="visualizations" class="flexbox-container">
+			<div id="selected-phone-node" class="visualization-container">
+				<div id="tooltip" class="hide-this-element shadow"></div>
+				<svg>
+					<g id="phone-calls-links"></g>
+					<g id="phone-ids-nodes"></g>
+					<g id="phone-ids-nodes-labels"></g>
+				</svg>
+			</div>
+			<div id="datetime-axis" class="visualization-container"></div>
+		</div>
+		<script type="text/javascript" src="scripts/utilityFunctions.js"></script>
+		<script type="text/javascript" src="scripts/loadCSV.js"></script>
+		<script type="text/javascript" src="scripts/main.js"></script>
+	</body>
+</html>

@@ -1,0 +1,183 @@
+html {
+	background-color: #2a6aa0;
+	font-family: "Helvetica", "Open-Sans", "sans-serif";
+	font-size: 14px;
+}
+
+p {
+	line-height: 1.5em;
+}
+
+.flexbox-container {
+	display: ‐moz‐box;
+	display: ‐ms‐box;
+	display: -webkit‐box;
+	display: -webkit-flex;
+	display: flex;
+}
+
+.drop-shadow {
+	-webkit-box-shadow: 0 2px 6px 0 #333333;
+	   -moz-box-shadow: 0 2px 6px 0 #333333;
+	        box-shadow: 0 2px 6px 0 #333333;
+}
+
+#navigation-bar {
+	-webkit-justify-content: space-between;
+	-moz-box-justify-content: space-between;
+	-ms-justify-content: space-between;
+	justify-content: space-between;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #2a6aa0;
+	width: 100%;
+	z-index: 50;
+}
+
+#navigation-bar ul {
+	display: inherit;
+	-webkit-align-items: center; 
+	-moz-box-align-items: center;
+	-ms-align-items: center;
+	align-items: center;
+	padding-right: 50px;
+}
+
+#navigation-bar li {
+	display: inherit;
+	-webkit-justify-content: center; 
+	-moz-box-justify-content: center;
+	-ms-justify-content: center;
+	justify-content: center;
+	padding: 15px;
+	width: 120px;
+}
+
+#navigation-bar li:hover {
+	background-color: #ffffff;
+	border-radius: 10px;
+}
+
+#navigation-bar li:hover a {
+	font-weight: 700;
+	color: #2a6aa0;
+}
+
+#navigation-bar a {
+	text-decoration: none;
+	font-style: normal;
+	font-weight: 400;
+	color: #ffffff;
+}
+
+#side-logo {
+	padding-left: 50px;
+	height: 60px;
+	width: auto;
+}
+
+#logo {
+	height: 500px;
+	width: auto;
+}
+
+#logo-background {
+	-webkit-justify-content: center;
+	-moz-box-justify-content: center;
+	-ms-justify-content: center;
+	justify-content: center;
+
+	-webkit-align-items: center;
+	-moz-box-align-items: center;
+	-ms-align-items: center;
+	align-items: center;
+  	
+  	background-color: #ffffff;
+  	height: 900px;
+}
+
+#intro-background {
+	-webkit-justify-content: center;
+	-moz-box-justify-content: center;
+	-ms-justify-content: center;
+	justify-content: center;
+
+	background: url("../images/intro-background.jpg") no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+	-o-background-size: cover;
+  	background-size: cover;
+	height: 650px;
+}
+
+#intro-background p {
+	padding-top: 370px;
+	width: 500px;
+	font-weight: 400;
+	color: #ffffff;
+}
+
+
+.instructions {
+	-webkit-flex-direction: column;
+	-moz-box-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+
+	-webkit-justify-content: center;
+	-moz-box-justify-content: center;
+	-ms-justify-content: center;
+	justify-content: center;
+
+	-webkit-align-items: center;
+	-moz-box-align-items: center;
+	-ms-align-items: center;
+	align-items: center;
+
+	background: url("../images/WindTurbine.jpg") no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+	-o-background-size: cover;
+  	background-size: cover;
+	height: 800px;
+	color: #ffffff;
+}	
+
+.instructions p {
+	margin-bottom: 3em;
+	width: 500px;
+	text-align: center;
+}
+
+.about {
+	-webkit-flex-direction: column;
+	-moz-box-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+
+	-webkit-justify-content: center;
+	-moz-box-justify-content: center;
+	-ms-justify-content: center;
+	justify-content: center;
+
+	-webkit-align-items: center;
+	-moz-box-align-items: center;
+	-ms-align-items: center;
+	align-items: center;
+
+	background: url("../images/SolarEnergy.jpg") no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+	-o-background-size: cover;
+  	background-size: cover;
+	height: 800px;
+	color: #ffffff;
+}
+
+.about p {
+	margin-bottom: 3em;
+	width: 700px;
+	text-align: center;
+}

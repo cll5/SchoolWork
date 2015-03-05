@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Flo - Sustainable Energy Consumption Visualizer</title>
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="stylesheets/reset.min.css">
+		<link rel="stylesheet" type="text/css" href="stylesheets/controls.css">
+		<link rel="stylesheet" type="text/css" href="stylesheets/visualization.css">
+		<link rel="stylesheet" type="text/css" href="stylesheets/starplot.css">
+		<link rel="stylesheet" type="text/css" href="stylesheets/brush.css">
+		<link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+		<script type="text/javascript" src="scripts/lodash.min.js"></script>
+		<script type="text/javascript" src="scripts/d3.min.js"></script>
+	</head>
+
+	<body>
+		<div id="navigation-bar" class="drop-shadow flexbox-container">
+			<a href="flo.html#logo-background">
+				<img id="side-logo" src="images/side-logo.svg">
+			</a>
+			<ul>
+				<li><a href="flo.html#intro-background">flo</a></li>
+				<li><a href="flo.html#visualization">visualization</a></li>
+				<li><a href="manual.html">user manual</a></li>
+				<li><a href="about.html">about</a></li>
+			</ul>
+		</div>
+
+		<div class="instructions flexbox-container">
+			<p>Flo is data visualization that describes what resources countries use to produce energy. In order to view how much energy a country consumes click an element in the &quotcountry selection menu on the left hand side&quot.You can view multiple countries by holding control or you can also drag the cursor along the various countries. The selected countries will be displayed in the individual country window, with the total of all the countries displayed in the aggregated view. In order to compare a group or a single country to the total selected countries use the cursor to highlight a rectangle encompassing your chosen countries within the individual country view. This will show you how much energy the chosen countries use in comparison to the total list allowing you to see how a group of countries compare to one another.</p>
+			<p>By default you see all the different renewable and non renewable resources. Use the checkboxes under &quotrenewable resources&quot or &quotnon-renewable resources&quot to limit the amount of energy sources displayed on the starplot. the individual country view shows a brief overlook while the aggregated view displays a more detail view of the energy consumption.</p>
+		</div>
+	</body>
+</html>

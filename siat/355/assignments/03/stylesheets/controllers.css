@@ -1,0 +1,14 @@
+#visualization-controls {
+	background-color: #B1C1E4;
+	border: 1px solid #5D5E5E;
+	border-radius: 5px 5px 0 0;
+	padding: 10px;
+}
+
+#visualization-controls div {
+	padding: 0.5em 0;
+}
+
+#visualization-controls input {
+	width: 5em;
+}

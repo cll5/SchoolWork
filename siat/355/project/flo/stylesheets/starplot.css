@@ -1,0 +1,87 @@
+.starplot {
+	stroke: #808080;
+	stroke-width: 1;
+	fill-rule: evenodd;
+}
+
+.starplot:hover {
+	cursor: context-menu;
+}
+
+.starplot-base {
+	fill: #ffffff;
+}
+
+.starplot-radial-lines {
+	stroke-dasharray: 4px 2px;
+	stroke-width: 1;
+}
+
+.starplot-selected .starplot-base {
+	stroke-width: 5;
+	stroke: #2bdce0;
+	fill:#2bdce0;
+	opacity: 0.25;
+}
+
+.starplot-energy {
+	stroke: none;
+	fill: #2a6aa0;
+	opacity: 0.7;
+}
+
+.starplot-filtered-energy {
+	fill: #2bdce0;
+	opacity: 0.7;
+}
+
+.sustainable-goal {
+	stroke: #000000;
+	stroke-dasharray: 4px 2px;
+	stroke-width: 3;
+	fill: none;
+	opacity: 1;
+}
+
+.starplot-text {
+	text-anchor: middle;
+	alignment-baseline: middle;
+	font-weight: lighter;
+	font-size: 0.75em;
+	color: #808080;
+}
+
+#starplot-container .starplot-text {
+	font-size: 1.75em;
+}
+
+.starplot-title {
+	text-anchor: middle;
+	font-size: 1em;
+	font-weight: 700;
+}
+
+
+
+.loading {
+	display: none;
+	cursor: progress;
+}
+
+#starplot-legend{
+	padding-bottom: 50px;
+	display: inline;
+}
+
+#starplot-legend text {
+	display: inline;
+	padding: 10px;
+	fill: #2a6aa0;
+	font-size:1.5em;
+}
+
+#rect {
+	fill:#2a6aa0;
+
+
+}

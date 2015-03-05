@@ -1,0 +1,35 @@
+#selected-phone-node svg {
+	min-width: 1000px;
+	height: 300px;
+}
+
+.node-label {
+	color: #5D5E5E;
+}
+
+.node {
+	stroke: #B1C1E4;
+	stroke-width: 4;
+	fill: #FFFFFF;
+}
+
+.node:hover {
+	stroke: #E88A2D;
+}
+
+.link {
+	stroke: #5D5E5E;
+}
+
+.link:hover {
+	stroke: #B1C1E4;
+}
+
+#tooltip {
+	position: absolute;
+	background: rgba(93, 94, 94, 0.75);
+	border-radius: 5px;
+	padding: 10px;
+	z-index: 10;
+	color: #FFFFFF;
+}

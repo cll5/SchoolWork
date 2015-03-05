@@ -1,0 +1,26 @@
+.barchart-axis path {
+	stroke: #000000;
+	stroke-width: 2;
+	fill: none;
+	shape-rendering: crispEdges;
+}
+
+.barchart-axis line {
+	display: none;
+}
+
+.barchart-axis text {
+	font-size: 1.5em;
+}
+
+.bar {
+	stroke: none;
+}
+
+.bar-total {
+	fill: #2a6aa0;
+}
+
+.bar-filtered {
+	fill: #2bdce0;
+}

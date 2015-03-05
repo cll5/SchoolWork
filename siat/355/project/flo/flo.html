@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Flo - Sustainable Energy Consumption Visualizer</title>
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="stylesheets/reset.min.css">
+		<link rel="stylesheet" type="text/css" href="stylesheets/controls.css">
+		<link rel="stylesheet" type="text/css" href="stylesheets/visualization.css">
+		<link rel="stylesheet" type="text/css" href="stylesheets/starplot.css">
+		<link rel="stylesheet" type="text/css" href="stylesheets/barchart.css">
+		<link rel="stylesheet" type="text/css" href="stylesheets/brush.css">
+		<link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+		<script type="text/javascript" src="scripts/lodash.min.js"></script>
+		<script type="text/javascript" src="scripts/d3.min.js"></script>
+	</head>
+
+	<body>
+		<div id="navigation-bar" class="drop-shadow flexbox-container">
+			<a href="#logo-background">
+				<img id="side-logo" src="images/side-logo.svg">
+			</a>
+			<ul>
+				<li><a href="#intro-background">flo</a></li>
+				<li><a href="#visualization">visualization</a></li>
+				<li><a href="manual.html ">user manual</a></li>
+				<li><a href="about.html">about </a></li>
+			</ul>
+		</div>
+		
+		<div id="logo-background" class="flexbox-container">
+			<img id="logo" src="images/flo-logo.svg">
+		</div>
+
+		<div id="intro-background" class="flexbox-container">
+			<p>Flo is a web application designed to create awareness about how we use energy. The topic of sustainability is a global issue that we are facing today more than ever due to our abundant use of non-renewable energy sources. In addition many are unaware of the various kinds of renewable energy sources that are available. Through flo, the aim is to create social awareness regarding energy consumption and the various energy sources used in modern times. The graphs below shows through which resources each country produces their total energy.</p>
+		</div>
+
+		<div id="visualization" class="flexbox-container">
+			<div id="main-control" class="control-container">
+				<div id="country-selection-title">
+					<span>Country Selection</span>
+				</div>
+				<select id="select-countries" multiple></select>
+			</div>
+
+			<div class="control-container">
+				<div id="sub-controls" class="flexbox-container">
+					<div id="select-sources" >
+						<div id="non-renewable" class="source-group">
+							<div class="source-group-name">
+								<span>Non-Renewable Energy Sources</span>
+							</div>
+							<div class="source-selectors flexbox-container"></div>
+						</div>
+
+						<div id="renewable" class="source-group">
+							<div class="source-group-name">
+								<span>Renewable Energy Sources</span>
+							</div>
+							<div class="source-selectors flexbox-container"></div>
+						</div>
+
+						<div id="year" class="source-group">
+							<div class="source-group-name">
+								<span>Active Date</span>
+							</div>
+
+							<div class="year-selector flexbox-container">
+								<div>
+									<span>Year:</span>
+								</div>
+								<select id="select-year"></select>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="visualization-containers">
+					<div id="individual-country-visualization" class="visualization-container">
+						<div class="visualization-group-title"><span>Individual Country View</span></div>
+						<svg preserveAspectRatio="xMinYMin meet"></svg>
+					</div>
+					<div id="aggregated-country-visualization" class="visualization-container">
+						<div class="visualization-group-title"><span>Aggregated View</span></div>
+						<svg preserveAspectRatio="xMaxYMin meet">
+							<g id="starplot-container"></g>
+							<g id="starplot-legend" class="flexbox-container">
+								<text x="45" y="20">Sustainable Target</text>
+								<rect width="30px" height="30px" stroke-dasharray="1,1" fill:"black" ></rect>
+								
+								<text x="45" y="65">Total Consumption</text>
+								<rect x ="0" y="45" width="30px" height="30px" fill="#2a6aa0"></rect>
+								
+								<text x="45" y ="110">Filtered Countries Consumptions</text>
+								<rect x="0" y="90" width="30px" height="30px" fill="#2bdce0"></rect>
+							</g>
+							<g id="barchart-container">
+								<g id="barchart-source-breakdown">
+									<g class="barchart-axis"></g>
+									<g class="barchart"></g>
+								</g>
+								<g id="barchart-aggregated">
+									<g class="barchart-axis"></g>
+									<g class="barchart"></g>
+								</g>
+							</g>
+						</svg>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="scripts/utilityFunctions.js"></script>
+		<script type="text/javascript" src="scripts/controls.js"></script>
+		<script type="text/javascript" src="scripts/starplot.js"></script>
+		<script type="text/javascript" src="scripts/barchart.js"></script>
+		<script type="text/javascript" src="scripts/visualization.js"></script>
+		<script type="text/javascript" src="scripts/main.js"></script>
+	</body>
+</html>
