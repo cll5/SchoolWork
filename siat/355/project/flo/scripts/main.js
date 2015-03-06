@@ -11,7 +11,7 @@ var energyMetadata = {
 
 
 //loads energy data and energy metadata from csv
-d3.csv("../data/countries.csv", function(row) {
+d3.csv("data/countries.csv", function(row) {
 	energyMetadata.countries.push(row.country);
 }, function(error) {
 	if (!_.isEmpty(error)) {
@@ -19,7 +19,7 @@ d3.csv("../data/countries.csv", function(row) {
 		console.log(error);
 	}
 
-	d3.csv("../data/sources.csv", function(row) {
+	d3.csv("data/sources.csv", function(row) {
 		energyMetadata.sources.push(row.sourceKey);
 		energyMetadata.sourceNames[row.sourceKey] = row.sourceName;
 		energyMetadata.sourceTypes[row.sourceKey] = row.sourceType;
@@ -36,7 +36,7 @@ d3.csv("../data/countries.csv", function(row) {
 			console.log(error);
 		}
 
-		d3.csv("../data/years.csv", function(row) {
+		d3.csv("data/years.csv", function(row) {
 			energyMetadata.years.push(+row.year);
 		}, function(error) {
 			if (!_.isEmpty(error)) {
@@ -44,7 +44,7 @@ d3.csv("../data/countries.csv", function(row) {
 				console.log(error);
 			}
 
-			d3.csv("../data/energyData.csv", function(row) {
+			d3.csv("data/energyData.csv", function(row) {
 				if (!energyData[row.country]) {
 					energyData[row.country] = {};
 				}
