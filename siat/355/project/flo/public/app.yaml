@@ -1,0 +1,29 @@
+application: flo-energy-visualization
+version: v1
+runtime: php55
+api_version: 1
+
+handlers:
+- url: /data
+  static_dir: data
+
+- url: /images
+  static_dir: images
+
+- url: /scripts
+  static_dir: scripts
+
+- url: /stylesheets
+  static_dir: stylesheets
+
+- url: /about
+  static_files: static/about.html
+  upload: static
+
+- url: /manual
+  static_files: static/manual.html
+  upload: static
+
+- url: /.*
+  static_files: static/flo.html
+  upload: static
