@@ -29,13 +29,13 @@ starplot.generatePathData = function(radii) {
 		};
 	});
 	return (convertToPathData(vertices) + "Z");
-}
+};
 
 starplot.drawPolygon = function(container, pathData, styles) {
 	container.append("path")
 			 .attr("d", pathData)
 			 .classed(styles);
-}
+};
 
 function drawRadialLine(starPlotSVG, initialRadius, finalRadius, angle, styles) {
 	var initialPoint = {radius: initialRadius, angle: angle};
@@ -74,7 +74,7 @@ function drawStarPlotBase(starPlotSVG, title, branches, radius, showBranchNames,
 	var titleYOffset = radius + padding.inner + (0.6 * padding.outer);
 
 	if (isAggregatedView) {
-		titleYOffset += (1.25 * padding.outer)
+		titleYOffset += (1.25 * padding.outer);
 	}
 
 	starPlotSVG.append("text")

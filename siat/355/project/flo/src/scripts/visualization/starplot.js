@@ -69,7 +69,7 @@ function drawStarPlotBase(starPlotSVG, title, branches, radius, showBranchNames,
 	var titleYOffset = radius + padding.inner + (0.6 * padding.outer);
 
 	if (isAggregatedView) {
-		titleYOffset += (1.25 * padding.outer)
+		titleYOffset += (1.25 * padding.outer);
 	}
 
 	starPlotSVG.append("text")

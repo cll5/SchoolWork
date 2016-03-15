@@ -62,7 +62,7 @@ function drawIndividualEnergyStarPlotForCountries(starPlotsContainer, countries,
 			x: countryGridXScale(i % numOfColumns),
 			y: countryGridYScale(quotient(i, numOfColumns))
 		};
-	}
+	};
 
 	var xBrushScaler = d3.scale.identity().domain([0, starPlotsContainerWidth]);
 	var yBrushScaler = d3.scale.identity().domain([0, starPlotsContainerHeight]);
@@ -101,7 +101,7 @@ var aggregatedEnergyData = {
 	sustainableGoal: {}
 };
 function drawAggregatedEnergyStarPlotForCountries(visualizationContainer, countries, filteredCountries, sources, year) {
-	var plotTitle = "Total Energy Consumption"
+	var plotTitle = "Total Energy Consumption";
 	var diameter = 500;
 	var radius = diameter/2;
 	var starPlotUnitWidth = diameter + (2 * (padding.inner + (2 * padding.outer)));
@@ -142,7 +142,7 @@ function drawAggregatedEnergyStarPlotForCountries(visualizationContainer, countr
 
 
 	//update starplot legend location
-	aggregatedStarPlotLegend.attr("transform", "translate(" + origin.legend.x + "," + origin.legend.y + ")")
+	aggregatedStarPlotLegend.attr("transform", "translate(" + origin.legend.x + "," + origin.legend.y + ")");
 
 
 	//draw the bar charts
