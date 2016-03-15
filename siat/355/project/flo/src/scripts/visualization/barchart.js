@@ -1,7 +1,7 @@
 function drawTwoViewedBarChart(visualizationContainer, combinedData, maxBarLength, chartWidth, chartHeight) {
 	var n = _.size(combinedData.consumptions);
 	var barChartWidth = chartWidth - (2 * barChartMargin);
-	var chartHeight = chartHeight - (4 * barChartMargin);
+	chartHeight = chartHeight - (4 * barChartMargin);
 	var barChartHeight = chartHeight * (n / (1 + n));
 	drawBarChart(visualizationContainer.select("#barchart-source-breakdown"), combinedData, maxBarLength, barChartWidth, barChartHeight);
 
