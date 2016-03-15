@@ -14,7 +14,7 @@ d3.select("#select-countries").on("change", function(d) {
 					 })
 					 .data();
 
-	selectedCountries = _.contains(selected, "All Countries") ? energyMetadata.countries : selected;
+	selectedCountries = _.includes(selected, "All Countries") ? energyMetadata.countries : selected;
 	updateVisualization();
 });
 
